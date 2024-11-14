@@ -1,0 +1,28 @@
+<div class="comment-list">
+  <h2>Weather</h2>
+  <input type="text" [(ngModel)]="cityName" placeholder="City">
+  <button (click)="getWeatherByName()">Get Weather</button>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Temperatura mínima</th>
+      <th>Temperatura máxima</th>
+      <th>Clima</th>
+    </tr>
+    </thead>
+    <tbody>
+
+      @for (weatherObj of apiService.weatherList; track $index){
+        <tr>
+      <td>{{ weatherObj.date }}</td>
+      <td>{{ weatherObj.temp.min }}</td>
+      <td>{{ weatherObj.temp.max }}</td>
+      <td>{{ weatherObj.weather[0].description }}</td>
+        </tr>
+      }
+
+    </tbody>
+  </table>
+</div>

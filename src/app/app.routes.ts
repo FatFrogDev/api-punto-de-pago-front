@@ -1,3 +1,10 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import {WeatherListComponent} from './components/weather-list/weather-list.component';
+
+
+export const routes: Routes = [
+  { path: '',
+    component: WeatherListComponent
+  }
+];
