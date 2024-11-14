@@ -2,26 +2,40 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [How To Use](#How-To-Use)
 
-## Code scaffolding
+## Setup
+  
+### Clone the repository
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+  git clone https://github.com/FatFrogDev/punto-de-pago-front.git
+  cd  punto-de-pago-front
+```
 
-## Build
+### Install dependencies & start the server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+````sh
+  npm install
+  ng serve
+````
 
-## Running unit tests
+## How To Use
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+By default, the app will be running on `http://localhost:4200/`. <br>
+The default endpoint will retrieve the information of "Bogotá" city. 
+To change the city, you can type a value into the input of html, when clicking the button, the content of the table will be updated with the information of the city you typed.
+Ex:
+Default:
 
-## Running end-to-end tests
+![punto-de-pago-default.png](punto-de-pago-default.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+With city query:
 
-## Further help
+![punto-de-pago-query.png](punto-de-pago-query.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Made with ❤️ by [FatFrogDev](https://github.com/FatFrogDev)
